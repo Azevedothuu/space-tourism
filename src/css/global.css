@@ -1,0 +1,93 @@
+html {
+  transition: all 2s;
+}
+
+body {
+  font-family: "bellefair";
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 2rem;
+}
+
+.nav-links {
+  display: flex;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+  gap: 2rem;
+  list-style: none;
+  padding: 30px 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 12px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+.nav-links li {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+/* titulo, subtitulo e paragráfos */
+
+#tittle {
+  font-weight: 300;
+  font-size: 24px;
+  font-family: "bellefair";
+}
+
+#sub-tittle {
+  font-family: "bellefair";
+  font-size: 90px;
+  font-weight: 100;
+}
+
+h1 {
+  margin: 0px;
+}
+
+p {
+  padding: 0px;
+}
