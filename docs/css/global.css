@@ -1,5 +1,5 @@
 html {
-  transition: all 2s;
+  transition: all 5s;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
   position: relative;
   transition: all 0.3s ease;
 }
-a {
+#link {
   position: relative;
   text-decoration: none;
   color: white;
@@ -51,7 +51,7 @@ a {
   font-weight: 300;
 }
 
-a::after {
+#link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -62,7 +62,7 @@ a::after {
   transition: width 0.3s ease;
 }
 
-a:hover::after {
+#link:hover::after {
   width: 100%;
 }
 .nav-links li {
