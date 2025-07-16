@@ -1,7 +1,18 @@
 .destination {
-  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
 }
 
 span {
   color: #3a3d47;
+}
+
+@media (max-width: 430px) {
+  .destination {
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-position: absolute;
+  }
+  .navbar {
+    flex-direction: column;
+  }
 }
