@@ -1,3 +1,7 @@
 .destination {
-  background-image: url(/docs/assets/destination/background-destination-desktop.jpg);
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
+}
+
+span {
+  color: #3a3d47;
 }

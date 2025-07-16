@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+
 html {
-  transition: all 5s;
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "bellefair";
+  font-family: "Bellefair", serif;
   color: white;
 }
+
+/* === NAVBAR === */
 
 .navbar {
   display: flex;
@@ -39,9 +44,10 @@ body {
 .nav-links li {
   cursor: pointer;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
   transition: all 0.3s ease;
+  font-family: "Barlow Condensed", sans-serif;
 }
 #link {
   position: relative;
@@ -75,19 +81,11 @@ body {
 #tittle {
   font-weight: 300;
   font-size: 24px;
-  font-family: "bellefair";
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 #sub-tittle {
-  font-family: "bellefair";
+  font-family: "Bellefair", serif;
   font-size: 90px;
   font-weight: 100;
-}
-
-h1 {
-  margin: 0px;
-}
-
-p {
-  padding: 0px;
 }

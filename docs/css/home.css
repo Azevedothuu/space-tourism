@@ -1,10 +1,14 @@
 .home {
   height: 100%;
   width: 100%;
-  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-image: url(/assets/home/background-home-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+h1 {
+  margin: 0px;
 }
 
 .conteiner {
@@ -21,6 +25,7 @@
 
 .text p {
   color: #8b8e9e;
+  font-family: "Barlow", sans-serif;
 }
 
 .travel-to #tittle {
@@ -43,6 +48,11 @@
     flex-direction: column;
   }
 
+  .home {
+    background-image: url(/assets/home/background-home-mobile.jpg);
+    background-size: 100vh;
+  }
+
   .travel-to {
     display: flex;
     flex-wrap: wrap;
@@ -61,8 +71,9 @@
     justify-content: center;
   }
   .text p {
-    font-size: 24px;
+    font-size: 26px;
     padding-left: 0px;
+    color: #ffffffb1;
   }
   .conteiner {
     display: inline-block;
@@ -78,5 +89,9 @@
     height: auto;
     width: 250px;
     cursor: pointer;
+  }
+  .nav-links li {
+    font-size: 19px;
+    font-weight: 600;
   }
 }
