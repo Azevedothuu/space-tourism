@@ -2,8 +2,26 @@
   background-image: url(../assets/destination/background-destination-desktop.jpg);
 }
 
+body {
+  margin: 0px;
+}
+
 span {
   color: #3a3d47;
+}
+.pick-your-destination {
+  padding-left: 150px;
+  margin-bottom: 40px;
+}
+
+.conteiner {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.content img {
+  width: 420px;
+  margin-top: 10px;
 }
 
 @media (max-width: 430px) {
