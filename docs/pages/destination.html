@@ -36,11 +36,50 @@
     </header>
   </body>
   <div class="pick-your-destination">
-    <p id="tittle"><span>01</span> PICK YOUR DESTINATION</p>
+    <p id="tittle">PICK YOUR DESTINATION</p>
   </div>
+
   <div class="conteiner">
-    <div class="content">
+    <nav class="nav-destination">
+      <ul class="nav">
+        <li id="link2" onclick="showPlanet('moon')">MOON</li>
+        <li id="link2" onclick="showPlanet('mars')">MARS</li>
+        <li id="link2" onclick="showPlanet('europa')">EUROPA</li>
+        <li id="link2" onclick="showPlanet('titan')">TITAN</li>
+      </ul>
+    </nav>
+    <div id="moon" class="planet-content">
       <img src="../assets/destination/image-moon.png" />
+      <div class="content">
+        <p id="sub-tittle">MOON</p>
+        <p id="text-moon">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <div class="line2"></div>
+        <div class="infos">
+          <div class="distance">
+            <p id="rodape">Avg. distance</p>
+            <span>384,400 km</span>
+          </div>
+          <div class="travel-time">
+            <p id="rodape">Est. travel time</p>
+            <span>3 days</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- <div id="mars" class="planet-content" style="display: none">
+    Conteúdo de Marte
+  </div>
+  <div id="europa" class="planet-content" style="display: none">
+    Conteúdo de Europa
+  </div>
+  <div id="titan" class="planet-content" style="display: none">
+    Conteúdo de Titã
+  </div> -->
 </html>

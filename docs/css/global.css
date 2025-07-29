@@ -17,6 +17,7 @@ body {
   align-items: center;
   padding: 32px 32px 0px 32px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .logo img {
@@ -82,10 +83,12 @@ body {
   font-weight: 300;
   font-size: 30px;
   font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 9px;
 }
 
 #sub-tittle {
   font-family: "Bellefair", serif;
   font-size: 90px;
   font-weight: 100;
+  margin: 0px;
 }

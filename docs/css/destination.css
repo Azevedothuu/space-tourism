@@ -1,29 +1,131 @@
-.destination {
-  background-image: url(../assets/destination/background-destination-desktop.jpg);
-}
-
 body {
-  margin: 0px;
-}
-
-span {
-  color: #3a3d47;
-}
-.pick-your-destination {
-  padding-left: 150px;
-  margin-bottom: 40px;
+  margin: 0;
+  font-family: "Bellefair", serif;
 }
 
 .conteiner {
-  padding-left: 180px;
-  padding-right: 180px;
+  display: grid;
 }
 
-.content img {
-  width: 420px;
+.content {
+  width: 360px;
+}
+
+.content ul li {
+  text-decoration: none;
+}
+
+.destination {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.distance {
+  width: 110px;
+  display: inline;
+}
+
+.distance span {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 22px;
+}
+
+.infos {
+  display: flex;
+  gap: 80px;
+}
+
+.line2 {
+  flex-grow: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  justify-content: flex-end;
+  padding-right: 170px;
+}
+
+.nav li {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.pick-your-destination {
+  padding-left: 150px;
+}
+
+#moon {
+  display: flex;
+  justify-content: space-around;
+}
+
+#moon img {
+  width: 350px;
   margin-top: 10px;
+  justify-content: flex-start;
 }
 
+#rodape {
+  width: 305px;
+  color: #8c8e9a;
+  font-weight: 500;
+}
+
+#text-moon {
+  width: 305px;
+  color: #8c8e9a;
+  font-weight: 500;
+}
+
+#link2 {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+#link2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+#link2:hover::after {
+  width: 100%;
+}
+
+span {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.travel-time {
+  display: inline;
+  width: 110px;
+}
+
+.travel-time span {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 22px;
+}
+
+/* Responsivo */
 @media (max-width: 430px) {
   .destination {
     background-image: url(../assets/destination/background-destination-mobile.jpg);
@@ -32,5 +134,7 @@ span {
   }
   .navbar {
     flex-direction: column;
+    justify-content: center;
+    display: flex;
   }
 }
