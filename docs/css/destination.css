@@ -11,8 +11,7 @@ span {
 }
 
 /* ========== IDS ========== */
-
-#link2 {
+.nav-link {
   color: white;
   font-weight: 300;
   padding-bottom: 2px;
@@ -20,7 +19,7 @@ span {
   text-decoration: none;
 }
 
-#link2::after {
+.nav-link::after {
   background-color: white;
   bottom: 0;
   content: "";
@@ -31,16 +30,28 @@ span {
   width: 0%;
 }
 
-#link2:hover::after {
+.nav-link:hover::after {
   width: 100%;
 }
+
+.nav-link.active {
+  opacity: 100%;
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+}
+
+.nav-link.active:hover::after {
+  width: 0 !important;
+  transition: none;
+}
+/* transição das div */
+
 /* planetas */
-#mars {
+#moon {
   display: flex;
   justify-content: space-around;
 }
-
-#moon {
+#mars {
   display: flex;
   justify-content: space-around;
 }
@@ -54,23 +65,29 @@ span {
   display: flex;
   justify-content: space-around;
 }
+
+/* gpt */
+.hidden {
+  display: none;
+}
+
 /* ================================= */
 
 /* imagens dos planetas */
 #mars img {
-  width: 350px;
+  width: 320px;
 }
 
 #moon img {
-  width: 350px;
+  width: 320px;
 }
 
 #europa img {
-  width: 350px;
+  width: 320px;
 }
 
 #titan img {
-  width: 350px;
+  width: 320px;
 }
 /* ============================================= */
 
@@ -96,12 +113,7 @@ span {
   width: 360px;
 }
 
-/* Lista dentro da .content */
-.content ul li {
-  text-decoration: none;
-}
-
-/* Imagem de fundo do body */
+/* Imagem de fundo */
 .destination {
   background-image: url(../assets/destination/background-destination-desktop.jpg);
   background-position: center;
@@ -111,29 +123,32 @@ span {
   width: 100%;
 }
 
-/* Distância média (parte esquerda do rodapé dos planetas) */
-.distance {
-  display: inline;
-  width: 110px;
-}
-
-.distance span {
-  color: white;
-  font-family: "Bellefair", serif;
-  font-size: 22px;
-}
-
-/* Container com distância e tempo */
-.infos {
-  display: flex;
-  gap: 80px;
-}
-
 /* Linha que separa o texto do rodapé */
 .line2 {
   background: rgba(255, 255, 255, 0.2);
   flex-grow: 1;
   height: 1px;
+}
+/* Container com distância e tempo */
+.infos {
+  display: flex;
+  gap: 80px;
+}
+/* Distância (infos) */
+.distance {
+  display: inline;
+  width: 110px;
+}
+
+/* Tempo de viagem  */
+.travel-time {
+  display: inline;
+  width: 110px;
+}
+.distance span {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 22px;
 }
 
 /* Navegação entre planetas */
@@ -155,12 +170,6 @@ span {
   padding-left: 150px;
 }
 
-/* Tempo de viagem  */
-.travel-time {
-  display: inline;
-  width: 110px;
-}
-
 .travel-time span {
   color: white;
   font-family: "Bellefair", serif;
@@ -172,13 +181,78 @@ span {
 @media (max-width: 430px) {
   .destination {
     background-image: url(../assets/destination/background-destination-mobile.jpg);
-    background-position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: 100%;
   }
 
   .navbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 15px;
+  }
+
+  .nav-links {
+    max-width: 414px;
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .pick-your-destination {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav-destination {
+    display: flex;
+    max-width: 430;
+    justify-content: center;
+  }
+  .nav {
+    padding: 0;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  #moon img {
+    width: 190px;
+  }
+
+  #mars img {
+    width: 190px;
+  }
+
+  #europa img {
+    width: 190px;
+  }
+
+  #titan img {
+    width: 190px;
+  }
+
+  .planet-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .planet-content .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 }

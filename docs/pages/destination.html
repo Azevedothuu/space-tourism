@@ -42,13 +42,15 @@
   <div class="conteiner">
     <nav class="nav-destination">
       <ul class="nav">
-        <li id="link2" onclick="showPlanet('moon')">MOON</li>
-        <li id="link2" onclick="showPlanet('mars')">MARS</li>
-        <li id="link2" onclick="showPlanet('europa')">EUROPA</li>
-        <li id="link2" onclick="showPlanet('titan')">TITAN</li>
+        <li class="nav-link active" onclick="showPlanet('moon', event)">
+          MOON
+        </li>
+        <li class="nav-link" onclick="showPlanet('mars', event)">MARS</li>
+        <li class="nav-link" onclick="showPlanet('europa', event)">EUROPA</li>
+        <li class="nav-link" onclick="showPlanet('titan', event)">TITAN</li>
       </ul>
     </nav>
-    <div id="moon" class="planet-content" style="display: none">
+    <div id="moon" class="planet-content" style="display: flex">
       <img src="../assets/destination/image-moon.png" />
       <div class="content">
         <p id="sub-tittle">MOON</p>
@@ -71,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div id="mars" class="planet-content" style="display: none">
+    <div id="mars" class="planet-content hidden" style="display: none">
       <img src="../assets/destination/image-mars.png" />
       <div class="content">
         <p id="sub-tittle">MARS</p>
@@ -93,7 +95,7 @@
         </div>
       </div>
     </div>
-    <div id="europa" class="planet-content" style="display: none">
+    <div id="europa" class="planet-content hidden" style="display: none">
       <img src="../assets/destination/image-europa.png" />
       <div class="content">
         <p id="sub-tittle">EUROPA</p>
@@ -116,7 +118,7 @@
         </div>
       </div>
     </div>
-    <div id="titan" class="planet-content" style="display: none">
+    <div id="titan" class="planet-content hidden" style="display: none">
       <img src="../assets/destination/image-titan.png" />
       <div class="content">
         <p id="sub-tittle">TITAN</p>
@@ -139,4 +141,5 @@
       </div>
     </div>
   </div>
+  <script src="../js/destination.js"></script>
 </html>
